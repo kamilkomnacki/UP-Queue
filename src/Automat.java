@@ -7,6 +7,11 @@ public class Automat implements ClientObservable {
     private Map<Service, Ticket> serviceToClient;
 
     private Automat() {
+        init();
+    }
+
+    private void init() {
+        ticketId = 0;
         clients = new ArrayList<>();
         tickets = new ArrayList<>();
         serviceToClient = new LinkedHashMap<>();
@@ -37,6 +42,10 @@ public class Automat implements ClientObservable {
         });
     }
 
+    public void restart() {
+        init();
+    }
+
     public Ticket getTicket() {
         Ticket t = new Ticket(ticketId++);
         tickets.add(t);
@@ -46,11 +55,13 @@ public class Automat implements ClientObservable {
     public String printClients() {
         StringBuilder sb = new StringBuilder();
         serviceToClient.forEach((service, ticket) -> {
-            sb.append("(")
-                    .append(ticket != null ? ticket.getId() : " ")
-                    .append(")-> ")
-                    .append(service.getName())
-                    .append("   ");
+            if(ticket != null) {
+                sb.append("[")
+                        .append(ticket.getId())
+                        .append("]-> ")
+                        .append(service.getName())
+                        .append("   ");
+            }
         });
         return String.valueOf(sb);
     }

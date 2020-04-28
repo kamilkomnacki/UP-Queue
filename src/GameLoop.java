@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TimerTask;
+import java.util.stream.Collectors;
 
 class GameLoop extends TimerTask {
     private static final int NUMBER_OF_SERVICES = 5;
@@ -8,6 +9,10 @@ class GameLoop extends TimerTask {
 
     public GameLoop() {
         this.clients = new ArrayList<>();
+        initServices();
+    }
+
+    private void initServices() {
         for (int i = 0; i < NUMBER_OF_SERVICES; i++) {
             Automat.getInstance().addService(new Service(i));
         }
@@ -25,7 +30,14 @@ class GameLoop extends TimerTask {
                     break;
                 case _2_NEW_CLIENT:
                     newClient();
+                    break;
                 case _9_RESTART:
+
+                    clients = new ArrayList<>();
+                    Automat.getInstance().restart();
+                    initServices();
+                    Automat.getInstance().getServices().forEach(Service::actualizeState);
+                    break;
                 default:
                     break;
             }
@@ -41,9 +53,11 @@ class GameLoop extends TimerTask {
 
     private void nextRound() {
         clients.removeIf(c -> c.getIssueLength() == 0);
+
         Automat.getInstance().getServices().forEach(service ->
                 service.actualizeState()
         );
+
         clients.forEach(c -> {
             Integer actualServiceId = c.getActualServicedBy();
             if (actualServiceId != null) {
@@ -52,14 +66,35 @@ class GameLoop extends TimerTask {
                         .forEach(service -> service.setActualClient(c));
             }
         });
+
     }
 
     private void printScreen() {
         Screen.printHeader();
-        Screen.printQueue(clients);
+
+        Screen.printQueue(clients.stream().filter(c -> c.getActualServicedBy() == null).collect(Collectors.toList()));
+
         Screen.printAutomat(Automat.getInstance().printClients());
+
         Automat.getInstance().getServices().forEach(service -> {
-            Screen.printService(service.getName(), service.getActualClientTicket());
+            String issueLength;
+            if (clients.stream()
+                    .anyMatch(c -> c.getActualServicedBy() != null && c.getActualServicedBy() == service.getId())
+            ) {
+                issueLength = String.valueOf(clients.stream()
+                        .filter(c -> c.getActualServicedBy() == service.getId())
+                        .findFirst()
+                        .get()
+                        .getIssueLength());
+            } else {
+                issueLength = "";
+            }
+
+            Screen.printService(
+                    service.getName(),
+                    service.getActualClientTicket(),
+                    issueLength
+            );
         });
     }
 }

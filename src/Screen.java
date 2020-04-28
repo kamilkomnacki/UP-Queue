@@ -27,9 +27,10 @@ public class Screen {
         System.out.println("Automat: " + automat);
         printSeparator();
     }
-    public static void printService(char nameOfService, Ticket actualTicket) {
-        System.out.println(String.format("Okienko %s: %s",
+    public static void printService(char nameOfService, Ticket actualTicket, String lengthOfIssue) {
+        System.out.println(String.format("Okienko %s: %s%s",
                 nameOfService,
-                actualTicket == null ? "" : actualTicket.getId()));
+                actualTicket == null ? "" : actualTicket.getId(),
+                "("+lengthOfIssue+")"));
     }
 }
