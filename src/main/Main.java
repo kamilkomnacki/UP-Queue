@@ -1,5 +1,6 @@
-import java.util.Random;
-import java.util.Timer;
+package main;
+
+import main.GameLoop;
 
 public class Main {
 

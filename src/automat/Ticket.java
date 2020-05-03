@@ -1,4 +1,4 @@
-import java.util.Objects;
+package automat;
 
 public class Ticket {
     private int id;

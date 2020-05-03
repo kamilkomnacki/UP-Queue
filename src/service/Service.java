@@ -1,4 +1,12 @@
+package service;
+
+import automat.Automat;
+import automat.Ticket;
+import client.Client;
+import client.ClientOrdinal;
+
 public class Service {
+    private static final int ASCII_CODE_A_CHAR = 65;
     private int id;
     private char name;
     private Client currentClient;
@@ -48,7 +56,7 @@ public class Service {
             if(currentClient.getIssueLength() == 0) {
                 currentClient = null;
             } else {
-                currentClient.setIssueLength(currentClient.getIssueLength() - 1);
+                currentClient.actualizeIssueLength();
             }
         }
     }
@@ -58,6 +66,6 @@ public class Service {
     }
 
     private char generateName(int serviceId) {
-        return (char) (65 + serviceId);
+        return (char) (ASCII_CODE_A_CHAR + serviceId);
     }
 }

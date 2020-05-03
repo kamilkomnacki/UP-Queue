@@ -1,3 +1,9 @@
+package automat;
+
+import client.ClientObservable;
+import client.ClientObserver;
+import service.Service;
+
 import java.util.*;
 
 public class Automat implements ClientObservable {
@@ -46,16 +52,20 @@ public class Automat implements ClientObservable {
         init();
     }
 
-    public Ticket getTicket() {
+    public Ticket getTicket(boolean isVIP) {
         Ticket t = new Ticket(ticketId++);
-        tickets.add(t);
+        if (isVIP) {
+            tickets.add(0, t);
+        } else {
+            tickets.add(t);
+        }
         return t;
     }
 
     public String printClients() {
         StringBuilder sb = new StringBuilder();
         serviceToClient.forEach((service, ticket) -> {
-            if(ticket != null) {
+            if (ticket != null) {
                 sb.append("[")
                         .append(ticket.getId())
                         .append("]-> ")
