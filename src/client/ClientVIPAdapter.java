@@ -6,14 +6,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// TODO: (2) Klasa adaptująca klasę ClientVIP.
-// TODO: (3) Klasa obserwujaca.
+// TODO: (2) Obiekt adaptujący klasę ClientVIP.
+// TODO: (3) Obiekt, ktory obserwuje
 /*
 * Adapter dla klasy ClientVIP.
 * Implementuje ClientObserver, czyli jest obserwatorem
 * */
 public class ClientVIPAdapter implements Client, ClientObserver {
-    private ClientVIP clientVIP;
+    private final ClientVIP clientVIP;
     private int issueLength;
     private Integer actualServicedBy;
 
@@ -24,12 +24,12 @@ public class ClientVIPAdapter implements Client, ClientObserver {
     }
 
     private int generateIssueLength() {
-        List<Integer> issueLengthIngrediends = new ArrayList<>();
-        issueLengthIngrediends.add(clientVIP.getImportance());
-        issueLengthIngrediends.add(clientVIP.getCompany().name().length());
-        issueLengthIngrediends.add(clientVIP.isBoss() ? 1 : 0);
-        issueLengthIngrediends.add(clientVIP.isPolitics() ? 1 : 0);
-        this.issueLength = issueLengthIngrediends.stream().mapToInt(Integer::intValue).sum();
+        List<Integer> issueLengthIngredients = new ArrayList<>();
+        issueLengthIngredients.add(clientVIP.getImportance());
+        issueLengthIngredients.add(clientVIP.getCompany().name().length());
+        issueLengthIngredients.add(clientVIP.isBoss() ? 1 : 0);
+        issueLengthIngredients.add(clientVIP.isPolitics() ? 1 : 0);
+        this.issueLength = issueLengthIngredients.stream().mapToInt(Integer::intValue).sum();
         return issueLength;
     }
 

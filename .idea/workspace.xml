@@ -19,18 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="226204fd-8345-43a8-9b3b-58b48a0780bc" name="Default Changelist" comment="Rename project">
-      <change beforePath="$PROJECT_DIR$/src/automat/Automat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automat/Automat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automat/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automat/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ClientObservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientObservable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ClientObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientObserver.java" afterDir="false" />
+    <list default="true" id="226204fd-8345-43a8-9b3b-58b48a0780bc" name="Default Changelist" comment="Clean up project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientOrdinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientOrdinal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientVIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientVIP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientVIPAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientVIPAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Screen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +41,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4" />
-    <option name="y" value="5" />
-    <option name="width" value="1358" />
-    <option name="height" value="759" />
-  </component>
   <component name="ProjectId" id="1dXbNyyg9m888bahS1msGx19oSJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -65,6 +52,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -168,7 +161,7 @@
       <workItem from="1588538720281" duration="39000" />
       <workItem from="1588578255707" duration="5430000" />
       <workItem from="1588777014383" duration="1582000" />
-      <workItem from="1592574351715" duration="1568000" />
+      <workItem from="1592574351715" duration="2668000" />
     </task>
     <task id="LOCAL-00001" summary="Add restart option">
       <created>1588067237096</created>
@@ -198,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592575476702</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Clean up project">
+      <created>1592576134744</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592576134744</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +235,8 @@
     <MESSAGE value="Add VIP client" />
     <MESSAGE value="Add comments for WP" />
     <MESSAGE value="Rename project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename project" />
+    <MESSAGE value="Clean up project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean up project" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1316" height="294" key="GridCell.Tab.0.bottom" timestamp="1592575402479">
@@ -262,9 +263,9 @@
       <screen x="1920" y="312" width="1366" height="768" />
     </state>
     <state x="1920" y="312" width="638" height="768" key="find.popup/1920.312.1366.768/0.0.1920.1080@1920.312.1366.768" timestamp="1592574988012" />
-    <state x="2266" y="401" width="672" height="678" key="search.everywhere.popup" timestamp="1592574655604">
+    <state x="2266" y="401" width="672" height="678" key="search.everywhere.popup" timestamp="1592576814062">
       <screen x="1920" y="312" width="1366" height="768" />
     </state>
-    <state x="2266" y="401" width="672" height="678" key="search.everywhere.popup/1920.312.1366.768/0.0.1920.1080@1920.312.1366.768" timestamp="1592574655604" />
+    <state x="2266" y="401" width="672" height="678" key="search.everywhere.popup/1920.312.1366.768/0.0.1920.1080@1920.312.1366.768" timestamp="1592576814062" />
   </component>
 </project>

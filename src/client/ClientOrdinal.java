@@ -4,7 +4,7 @@ import automat.Ticket;
 
 import java.util.Random;
 
-// TODO: (3) Obiekt obserwujacy
+// TODO: (3) Obiekt, ktory obserwuje
 /*
 * Implementuje ClientObserver, czyli jest obserwatorem.
 * */

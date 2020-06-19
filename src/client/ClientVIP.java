@@ -4,6 +4,7 @@ import automat.Ticket;
 
 import java.util.Random;
 
+// TODO: (2) Obiekt, który trzeba zaadoptować za pomoca adaptera.
 public class ClientVIP {
     public static final int VIP_IMPORTANCE_MAXIMUM = 7;
 
