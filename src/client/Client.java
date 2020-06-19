@@ -12,5 +12,4 @@ public interface Client {
     void actualizeIssueLength();
 
     Integer getActualServicedBy();
-
 }

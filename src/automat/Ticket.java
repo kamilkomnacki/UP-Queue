@@ -1,7 +1,7 @@
 package automat;
 
 public class Ticket {
-    private int id;
+    private final int id;
 
     public Ticket(int id) {
         this.id = id;

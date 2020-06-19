@@ -4,11 +4,12 @@ import automat.Ticket;
 
 import java.util.Random;
 
+// TODO: (3) Obiekt obserwujacy
 /*
 * Implementuje ClientObserver, czyli jest obserwatorem.
 * */
 public class ClientOrdinal implements ClientObserver, Client {
-    private Ticket myTicket;
+    private final Ticket myTicket;
     private Integer actualServicedBy;
     private int issueLength;
 

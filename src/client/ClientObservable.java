@@ -2,6 +2,7 @@ package client;
 
 import automat.Ticket;
 
+// TODO: (3) Interfejs obiektu obserwowanego.
 /*
 *
 * Interfejs dla obiektu obserwowanego

@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// TODO: (2) Klasa adaptująca klasę ClientVIP.
+// TODO: (3) Klasa obserwujaca.
 /*
 * Adapter dla klasy ClientVIP.
 * Implementuje ClientObserver, czyli jest obserwatorem

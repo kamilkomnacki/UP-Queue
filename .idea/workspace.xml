@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="226204fd-8345-43a8-9b3b-58b48a0780bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="226204fd-8345-43a8-9b3b-58b48a0780bc" name="Default Changelist" comment="Rename project">
       <change beforePath="$PROJECT_DIR$/src/automat/Automat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automat/Automat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automat/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automat/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientObservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientObservable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientOrdinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientOrdinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ClientVIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientVIP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientVIPAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientVIPAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +168,7 @@
       <workItem from="1588538720281" duration="39000" />
       <workItem from="1588578255707" duration="5430000" />
       <workItem from="1588777014383" duration="1582000" />
-      <workItem from="1592574351715" duration="1049000" />
+      <workItem from="1592574351715" duration="1568000" />
     </task>
     <task id="LOCAL-00001" summary="Add restart option">
       <created>1588067237096</created>
@@ -163,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588538072601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add comments for WP">
+      <created>1592575430611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592575430611</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Rename project">
+      <created>1592575476702</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592575476702</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +233,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add restart option" />
     <MESSAGE value="Add VIP client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add VIP client" />
+    <MESSAGE value="Add comments for WP" />
+    <MESSAGE value="Rename project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename project" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1316" height="294" key="GridCell.Tab.0.bottom" timestamp="1592575402479">

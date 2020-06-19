@@ -3,7 +3,6 @@ package main;
 import automat.Automat;
 import automat.Ticket;
 import client.Client;
-import client.ClientOrdinal;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -8,13 +8,13 @@ public class ClientVIP {
     public static final int VIP_IMPORTANCE_MAXIMUM = 7;
 
     public enum COMPANY {
-        UP, GOOGLE, APPLE, SAMSUNG, FACEBOOK, AMAZON, CP_PROJEKT;
+        UP, GOOGLE, APPLE, SAMSUNG, FACEBOOK, AMAZON, CP_PROJEKT
     }
-    private COMPANY company;
+    private final COMPANY company;
 
-    private int importance;
-    private boolean isBoss;
-    private boolean isPolitics;
+    private final int importance;
+    private final boolean isBoss;
+    private final boolean isPolitics;
     private final Ticket myTicket;
 
     public ClientVIP(Ticket ticket, boolean isBoss, boolean isPolitics) {
