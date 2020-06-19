@@ -16,7 +16,9 @@ public class Screen {
     private static void printHeader() {
         newScreen();
         System.out.println("-------------------KOLEJKA W ZUSIE-------------------------");
-        System.out.println("-------------------AUTOR: K.Komnacki-----------------------");
+        System.out.println("-------------------UP 2019/2020 WP-------------------------");
+        System.out.println("-------------------Kamil  Komnacki-------------------------");
+        System.out.println("-----------------------------------------------------------");
         printSeparator();
     }
 
@@ -89,7 +91,7 @@ public class Screen {
 
     public static void printInstruction() {
         printHeader();
-        System.out.println("-----------------------------------------------------------");
+
         System.out.println("-Instrukcja: ----------------------------------------------");
         printSeparator();
         System.out.println("Program przedstawia problem 'producent-konsumer' na ");

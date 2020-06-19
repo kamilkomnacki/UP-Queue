@@ -6,6 +6,11 @@ import service.Service;
 
 import java.util.*;
 
+/*
+*
+* Jest obiektem typu singletonem.
+* Jest obiektem obserwowanym przez obiekty implementujące ClientObserver.
+* */
 public class Automat implements ClientObservable {
     private static int ticketId;
     private List<ClientObserver> clients;

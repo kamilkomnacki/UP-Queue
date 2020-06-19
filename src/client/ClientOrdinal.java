@@ -4,6 +4,9 @@ import automat.Ticket;
 
 import java.util.Random;
 
+/*
+* Implementuje ClientObserver, czyli jest obserwatorem.
+* */
 public class ClientOrdinal implements ClientObserver, Client {
     private Ticket myTicket;
     private Integer actualServicedBy;

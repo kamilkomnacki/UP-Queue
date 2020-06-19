@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+* Adapter dla klasy ClientVIP.
+* Implementuje ClientObserver, czyli jest obserwatorem
+* */
 public class ClientVIPAdapter implements Client, ClientObserver {
     private ClientVIP clientVIP;
     private int issueLength;
